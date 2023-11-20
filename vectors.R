@@ -100,3 +100,22 @@ vetor <- c(31, 4, 15, 92, 65)
 sort(vetor) # 4 15 31 65 92
 order(vetor) # 2 3 1 5 4
 rank(vetor) # 3 1 2 5 4
+
+# ----- operações aritméticas
+
+murders$state[which.max(murders$population)] #california
+max(murders$population) #37.253.956
+# fica injusta a comparação direta com outros estados
+
+heights <- c(69, 62, 66, 70, 70, 73, 67, 73, 67, 70)
+heights * 2.54 #todas as entradas x2.5
+heights - 69 #todas as entradas -69
+
+#assassinatos a cada 100 mil pessoas
+murder_rate <- murders$total/murders$population*100000
+
+#lista de maneira decrescente
+murders$state[order(murder_rate, decreasing=TRUE)]
+
+#pode-se verificar que a california tem o maior número de assassinatos
+#porém, district of columbia possui a maior taxa por 100.000 habitantes
