@@ -19,3 +19,20 @@ filter(new_table, rate <= 0.71)
 
 # funções por "etapas" - pipe: %>%
 murders %>% select(state, region, rate) %>% filter(rate <= 0.71)
+
+# ----- criação de dataframes -----
+
+grades <- data.frame(names = c("John", "Juan", "Jean", "Yao"),
+                     exam_1 = c(95, 80, 90, 85),
+                     exam_2 = c(90, 85, 85, 90))
+grades
+
+class(grades$names) #character
+
+grades <- data.frame(names = c("John", "Juan", "Jean", "Yao"),
+                     exam_1 = c(95, 80, 90, 85),
+                     exam_2 = c(90, 85, 85, 90),
+                     stringsAsFactors = TRUE)
+grades
+
+class(grades$names) #factor
