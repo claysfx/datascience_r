@@ -1,5 +1,3 @@
-# datascience_r
-
 - ## básico de R, funções e dataypes
 
   1.1. porque aprender R?
