@@ -1,3 +1,5 @@
+# Curso HavardX "Data Science: R Basics"
+
 - ## básico de R, funções e dataypes
 
   1.1. porque aprender R?
