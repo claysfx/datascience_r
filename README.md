@@ -1,4 +1,4 @@
-# datascience_r
+# curso HavardX "Data Science: R Basics"
 
 - ## básico de R, funções e dataypes
 
