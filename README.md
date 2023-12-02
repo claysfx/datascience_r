@@ -29,3 +29,7 @@
   3.4. [data summarize](https://github.com/claysfx/datascience_r/blob/main/summarizing_data.R)
 
   3.5. [data.table](https://github.com/claysfx/datascience_r/blob/main/data.table.R)
+
+- ## programação básica - tópico extra
+
+  4.1. **em breve!**
