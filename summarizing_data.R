@@ -28,3 +28,19 @@ mean(murders$rate)
 us_murder_rate <- murders %>%
   summarize(rate = sum(total)/sum(population) * 10^5)
 us_murder_rate
+
+# func quantile
+
+murders %>%
+  filter(region == 'West') %>%
+  summarize(range = quantile(rate, c(0, 0.5, 1)))
+
+# criando dataframe
+
+my_quantile <- function(x){
+  r <- quantile(x, c(0, 0.5, 1))
+  data.frame(minimum = r[1], median = r[2], maximum = r[3])
+}
+murders %>%
+  filter(region == 'West') %>%
+  summarize(my_quantile(rate))
