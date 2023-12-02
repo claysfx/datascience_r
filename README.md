@@ -27,3 +27,5 @@
   3.3. [plotagem gráfica](https://github.com/claysfx/datascience_r/blob/main/plots.R)
 
   3.4. [data summarize](https://github.com/claysfx/datascience_r/blob/main/summarizing_data.R)
+
+  3.5. [data.table](https://github.com/claysfx/datascience_r/blob/main/data.table.R)
