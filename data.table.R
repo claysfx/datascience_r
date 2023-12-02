@@ -92,3 +92,22 @@ murders[order(-population)] |> head()
 murders[order(population, decreasing = TRUE)] |> head()
 
 murders[order(region, rate)] #+1 argumento
+
+# ----- tibbles (TBL) -----
+
+# dataframe agrupado pelas regiões
+murders %>% group_by(region)
+murders %>% group_by(region) %>% class()
+
+gapminder #dataframe
+as_tibble(gapminder) #tbl dataframe
+
+class(murders[,1]) #primeira coluna do dataframe -> character
+class(as_tibble(murders)[,1]) #"tbl_df" "tbl" "data.frame"
+class(as_tibble(murders)$state) #character
+
+murders$State #NULL
+as_tibble(murders)$State #unknown or uninitialised column: `State`
+
+# criando uma tbl
+tibble(id = c(1, 2, 3), func = (c(mean, median, sd)))
