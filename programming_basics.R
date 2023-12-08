@@ -69,3 +69,6 @@ avg <- function(x, arithmetic=FALSE){
 }
 x <- c(1:100)
 avg(x) #37.9
+
+# ----- loops -----
+
