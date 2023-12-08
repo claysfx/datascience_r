@@ -30,6 +30,6 @@
 
   3.5. [data.table](https://github.com/claysfx/datascience_r/blob/main/data.table.R)
 
-- ## programação básica - tópico extra
+- ## programação básica em R
 
   4.1. **em breve!**
