@@ -70,5 +70,26 @@ avg <- function(x, arithmetic=FALSE){
 x <- c(1:100)
 avg(x) #37.9
 
+compute_s_n <- function(n){
+  x <- 1:n
+  sum(x)
+}
+compute_s_n(100) #5050
+
 # ----- loops -----
 
+m <- 25
+# criar um vetor vazio
+s_n <- vector(length = m)
+
+for(n in 1:m){
+  s_n[n] <- compute_s_n(n)
+}
+s_n
+
+x <- 1:m
+plot(x, s_n)
+
+# algumas funções para ver:
+# apply, sapply, tapply, mapply
+# split, cut, quantile, reduce, identical, unique, etc
